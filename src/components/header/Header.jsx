@@ -3,13 +3,18 @@ import './Header.css';
 
 /* IMAGES */
 import logo from '../../assets/images/logo.svg';
+import iconCardImage from '../../assets/images/icon-cart.svg';
+import avatarProfileImage from '../../assets/images/image-avatar.png';
 
 const Header = () => {
   return (
-    <header className="flex gap-14">
+    <header className="flex gap-10 pb-6 pt-2">
+      <div className="flex items-center justify-end w-2/4 mt-2 ">
+        <img src={logo} alt="logo" />
+      </div>
       <nav className="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label className="menu__btn" htmlFor="menu__toggle">
+        <input id="menu__toggle" type="checkbox" className="md:hidden" />
+        <label className="menu__btn md:hidden mt-2" htmlFor="menu__toggle">
           <span></span>
         </label>
 
@@ -41,8 +46,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div>
-        <img src={logo} alt="logo" />
+      <div className="flex gap-4">
+        <img src={iconCardImage} alt="icon card" className="w-8 h-8" />
+        <img src={avatarProfileImage} alt="profile" className="w-8 h-8" />
       </div>
     </header>
   );
