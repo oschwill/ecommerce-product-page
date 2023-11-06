@@ -1,5 +1,7 @@
 /* GALLERY */
 import ImageGallery from 'react-image-gallery';
+import previousArrow from '../../assets/images/icon-previous.svg';
+import nextArrow from '../../assets/images/icon-next.svg';
 
 /* IMAGES */
 import productImageOne from '../../assets/images/image-product-1.jpg';
@@ -12,6 +14,7 @@ import productImageThreeThumb from '../../assets/images/image-product-3-thumbnai
 import productImageFour from '../../assets/images/image-product-4.jpg';
 import productImageFourThumb from '../../assets/images/image-product-4-thumbnail.jpg';
 import { useEffect, useRef, useState } from 'react';
+import ArrowNav from './ArrowNav';
 
 const imageGallery = [
   {
@@ -43,6 +46,7 @@ const Gallery = () => {
   }, []);
 
   const makeFullScreen = () => {
+    return;
     galleryRef.current.toggleFullScreen();
   };
 
@@ -55,6 +59,13 @@ const Gallery = () => {
         showFullscreenButton={false}
         onClick={makeFullScreen}
         showThumbnails={screenWidth > 768 ? true : false}
+        renderLeftNav={(onClick) => (
+          <ArrowNav onClick={onClick} arrow={previousArrow} position="left-6" />
+        )}
+        renderRightNav={(onClick) => (
+          <ArrowNav onClick={onClick} arrow={nextArrow} position="right-6" />
+        )}
+        showNav={screenWidth > 1024 ? false : true}
       />
     </article>
   );

@@ -8,47 +8,49 @@ import avatarProfileImage from '../../assets/images/image-avatar.png';
 
 const Header = () => {
   return (
-    <header className="flex gap-10 pb-6 pt-2">
-      <div className="flex items-center justify-end w-2/4 mt-2 ">
-        <img src={logo} alt="logo" />
+    <header className="flex gap-10 pb-6 pt-2 md:items-center md:gap-0 ">
+      <div className="flex items-center justify-end w-2/4 mt-2 md:justify-start lg:w-auto md:mt-0 md:mr-8 md:ml-28">
+        <img src={logo} alt="logo" className="w-auto" />
       </div>
-      <nav className="hamburger-menu">
+      <nav>
         <input id="menu__toggle" type="checkbox" className="md:hidden" />
         <label className="menu__btn md:hidden mt-2" htmlFor="menu__toggle">
           <span></span>
         </label>
-
-        <ul className="menu__box">
-          <li>
-            <NavLink className="menu__item" href="#">
-              Collections
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="menu__item" href="#">
-              Men
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="menu__item" href="#">
-              Women
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="menu__item" href="#">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="menu__item" href="#">
-              Contact
-            </NavLink>
-          </li>
-        </ul>
+        <div className="menu__box-background md:hidden">&nbsp;</div>
+        <div className="menu__box flex md:relative md:left-0 md:w-auto p-0 ">
+          <ul className="md:flex">
+            <li>
+              <NavLink className="menu__item" href="#">
+                Collections
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu__item" href="#">
+                Men
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu__item" href="#">
+                Women
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu__item" href="#">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="menu__item" href="#">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div className="flex gap-4">
-        <img src={iconCardImage} alt="icon card" className="w-8 h-8" />
-        <img src={avatarProfileImage} alt="profile" className="w-8 h-8" />
+      <div className="flex gap-4 items-end md:ml-auto md:mr-28">
+        <img src={iconCardImage} alt="icon card" className="w-6 h-6 lg:w-8 lg:h-8" />
+        <img src={avatarProfileImage} alt="profile" className="w-6 h-6 lg:w-8 lg:h-8" />
       </div>
     </header>
   );

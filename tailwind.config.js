@@ -5,6 +5,13 @@ export default {
     extend: {
       colors: {
         footerLinkFont: 'hsl(228, 45%, 44%)',
+        textFontOrange: 'hsl(26, 100%, 55%)',
+        textFontLightGrayish: 'hsl(219, 9%, 45%)',
+        textFontLightBlue: 'hsl(220, 14%, 75%)',
+        buttonBackgroundPrimary: 'hsl(223, 64%, 98%)',
+        buttonBackgroundSecondary: 'hsl(26, 100%, 55%)',
+        backgroundPaleOrange: 'hsl(25, 100%, 94%)',
+        fullScreenGalleryBackgroundColor: 'hsl(0, 0%, 0%)',
       },
     },
   },

@@ -1,3 +1,36 @@
+@font-face {
+  font-family: KumbhSans;
+  src: url('./assets/fonts/KumbhSans-VariableFont_YOPQ_wght.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: KumbhSans, system-ui, sans-serif;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    border-radius: 25px;
+    max-height: calc(100vh - 250px);
+  }
+
+  .image-gallery-slide .image-gallery-image {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .image-gallery-thumbnails .image-gallery-thumbnails-container {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+  }
+
+  .image-gallery-thumbnails {
+    padding: 25px 0;
+  }
+}
