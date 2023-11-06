@@ -8,8 +8,8 @@ import avatarProfileImage from '../../assets/images/image-avatar.png';
 
 const Header = () => {
   return (
-    <header className="flex gap-10 pb-6 pt-2 md:items-center md:gap-0 ">
-      <div className="flex items-center justify-end w-2/4 mt-2 md:justify-start lg:w-auto md:w-1/4 md:mt-0 lg:mr-8 md:ml-28">
+    <header className="flex gap-10 pt-2 md:items-center md:gap-0 ">
+      <div className="flex items-center justify-end w-2/4 mt-2 md:justify-start lg:w-auto md:w-1/4 md:mt-0 lg:mr-8 md:ml-28 md:h-20">
         <img src={logo} alt="logo" className="max-w-md" />
       </div>
       <nav>
@@ -25,22 +25,22 @@ const Header = () => {
                 Collections
               </NavLink>
             </li>
-            <li className="hover:border-b-4 h-20">
+            <li className="hover:border-b-4 md:h-20">
               <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Men
               </NavLink>
             </li>
-            <li className="hover:border-b-4 h-20">
+            <li className="hover:border-b-4 md:h-20">
               <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Women
               </NavLink>
             </li>
-            <li className="hover:border-b-4 h-20">
+            <li className="hover:border-b-4 md:h-20">
               <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 About
               </NavLink>
             </li>
-            <li className="hover:border-b-4 h-20">
+            <li className="hover:border-b-4 md:h-20">
               <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Contact
               </NavLink>
