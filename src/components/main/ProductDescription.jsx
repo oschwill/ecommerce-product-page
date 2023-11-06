@@ -7,7 +7,7 @@ const ProductDescription = () => {
   return (
     <article className="w-5/6 ml-auto mr-auto pt-6 pb-8 flex flex-col gap-6 lg:mt-20 lg:gap-10 lg:w-4/6">
       <div className="flex flex-col gap-2">
-        <p className="text-textFontOrange font-bold">SNEAKER COMPANY</p>
+        <p className="text-textFontOrange font-bold md:mb-6">SNEAKER COMPANY</p>
         <h2 className="text-4xl font-bold mb-4">Fall Limited Edition Snearkers</h2>
         <p className="text-textFontLightGrayish">
           These low-profile sneakers are your perfect casual wear companion. Featuring a durable
