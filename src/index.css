@@ -13,10 +13,16 @@
   }
 }
 
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus,
+.image-gallery-thumbnail:hover {
+  border: 4px solid hsl(26, 100%, 55%);
+}
+
 @media (min-width: 1024px) {
   .image-gallery-content .image-gallery-slide .image-gallery-image {
     border-radius: 25px;
-    max-height: calc(100vh - 250px);
+    max-height: calc(100vh - 375px);
   }
 
   .image-gallery-slide .image-gallery-image {
@@ -32,5 +38,12 @@
 
   .image-gallery-thumbnails {
     padding: 25px 0;
+  }
+
+  .image-gallery-thumbnail {
+    border-radius: 20px;
+  }
+  .image-gallery-thumbnail-image {
+    border-radius: 15px;
   }
 }

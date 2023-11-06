@@ -25,16 +25,16 @@ const ProductDescription = () => {
       </div>
       <div className="flex flex-col gap-4 lg:flex-row">
         <div className="flex justify-between bg-buttonBackgroundPrimary p-4 rounded-lg lg:w-1/4">
-          <button className="pl-2">
+          <button className="pl-2 hover:opacity-75">
             <img src={iconMinus} alt="minus" />
           </button>
           <p className="font-bold">0</p>
-          <button className="pr-2">
+          <button className="pr-2 hover:opacity-75">
             <img src={iconPlus} alt="plus" />
           </button>
         </div>
         <div className="lg:w-3/4">
-          <button className="bg-buttonBackgroundSecondary w-full flex items-center justify-center gap-4 p-4 text-white rounded-lg shadow-lg shadow-buttonBackgroundSecondary">
+          <button className="bg-buttonBackgroundSecondary w-full flex items-center justify-center gap-4 p-4 text-white rounded-lg shadow-lg shadow-buttonBackgroundSecondary hover:opacity-75">
             <img src={cartImage} alt="cart" />
             <span>Add to cart</span>
           </button>

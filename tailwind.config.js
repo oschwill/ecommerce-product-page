@@ -12,6 +12,10 @@ export default {
         buttonBackgroundSecondary: 'hsl(26, 100%, 55%)',
         backgroundPaleOrange: 'hsl(25, 100%, 94%)',
         fullScreenGalleryBackgroundColor: 'hsl(0, 0%, 0%)',
+        fullImageScreenBackgroundColor: 'rgba(0,0,0, 0.75)',
+      },
+      spacing: {
+        '-20px': '-20px',
       },
     },
   },
