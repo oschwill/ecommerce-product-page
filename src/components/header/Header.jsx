@@ -19,29 +19,29 @@ const Header = () => {
         </label>
         <div className="menu__box-background md:hidden">&nbsp;</div>
         <div className="menu__box flex md:relative md:left-0 md:w-auto p-0 ">
-          <ul className="md:flex">
-            <li>
-              <NavLink className="menu__item  md:text-sm lg:text-base" href="#">
+          <ul className="md:flex gap-16 mt-16 md:mt-0 ">
+            <li className="hover:border-b-4 h-20">
+              <NavLink className="p-3 pr-6 block md:pr-0 md:text-sm lg:text-base " href="#">
                 Collections
               </NavLink>
             </li>
-            <li>
-              <NavLink className="menu__item  md:text-sm lg:text-base" href="#">
+            <li className="hover:border-b-4 h-20">
+              <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Men
               </NavLink>
             </li>
-            <li>
-              <NavLink className="menu__item  md:text-sm lg:text-base" href="#">
+            <li className="hover:border-b-4 h-20">
+              <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Women
               </NavLink>
             </li>
-            <li>
-              <NavLink className="menu__item  md:text-sm lg:text-base" href="#">
+            <li className="hover:border-b-4 h-20">
+              <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink className="menu__item  md:text-sm lg:text-base" href="#">
+            <li className="hover:border-b-4 h-20">
+              <NavLink className="p-3 pr-6 block md:pl-0 md:pr-0  md:text-sm lg:text-base" href="#">
                 Contact
               </NavLink>
             </li>
