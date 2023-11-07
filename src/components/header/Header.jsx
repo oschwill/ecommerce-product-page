@@ -65,7 +65,7 @@ const Header = ({ onHandleShowCart, cartData }) => {
           </ul>
         </div>
       </nav>
-      <div className="flex gap-8 md:gap-4 lg:gap-12 ml-auto lg:mr-28 items-center">
+      <div className="flex gap-8 md:gap-4 ml-auto lg:mr-28 items-center xl:gap-12">
         <div className="relative">
           <img
             src={iconCardImage}
