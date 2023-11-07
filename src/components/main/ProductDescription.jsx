@@ -50,6 +50,7 @@ const ProductDescription = ({ onHandleSetCardData }) => {
                 className="bg-buttonBackgroundSecondary w-full flex items-center justify-center gap-4 p-4 text-white rounded-lg shadow-lg shadow-buttonBackgroundSecondary hover:opacity-75"
                 onClick={() =>
                   onHandleSetCardData({
+                    id: productData[0].id,
                     count,
                     productName: productData[0].productName,
                     thumbnail: productData[0].thumbnail,

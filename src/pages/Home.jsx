@@ -27,13 +27,16 @@ const Home = () => {
     if (newCardObj.count === 0) {
       return;
     }
-    //
-    setCardData((card) => [...card, newCardObj]);
+    setCardData([newCardObj]);
+  };
+
+  const deleteCardData = (id) => {
+    setCardData((card) => card.filter((c) => c.id !== id));
   };
 
   return (
     <>
-      <Header onHandleShowCart={handleSetShowCart} />
+      <Header onHandleShowCart={handleSetShowCart} cartData={cartData} />
       <main>
         <section className="flex flex-col lg:border-t-2 lg:pt-24 lg:ml-28 lg:mr-28 lg:grid grid-cols-2">
           <Gallery
@@ -44,7 +47,7 @@ const Home = () => {
             left="left-6"
           />
           <ProductDescription onHandleSetCardData={handleSetCardData} />
-          {showCart && <CartList cartData={cartData} />}
+          {showCart && <CartList cartData={cartData} deleteCardData={deleteCardData} />}
         </section>
         {showFullImageGallery && (
           <div className="h-full w-full bg-fullImageScreenBackgroundColor absolute top-0 flex items-center justify-center z-50">

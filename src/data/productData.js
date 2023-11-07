@@ -2,6 +2,7 @@ import productImageOneThumb from '../assets/images/image-product-1-thumbnail.jpg
 
 export const data = [
   {
+    id: 1,
     company: 'SNEAKER COMPANY',
     productName: 'Fall Limited Edition Sneakers',
     description:
