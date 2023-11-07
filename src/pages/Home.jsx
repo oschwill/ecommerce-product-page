@@ -11,6 +11,7 @@ import { useRef, useState } from 'react';
 const Home = () => {
   const [showCart, setShowCart] = useState(false);
   const [showFullImageGallery, setShowFullImageGallery] = useState(false);
+  const [cartData, setCardData] = useState([]);
 
   const galleryRef = useRef();
 
@@ -20,6 +21,14 @@ const Home = () => {
 
   const handleSetShowFullImageGallery = () => {
     setShowFullImageGallery(!showFullImageGallery);
+  };
+
+  const handleSetCardData = (newCardObj) => {
+    if (newCardObj.count === 0) {
+      return;
+    }
+    //
+    setCardData((card) => [...card, newCardObj]);
   };
 
   return (
@@ -34,8 +43,8 @@ const Home = () => {
             right="right-6"
             left="left-6"
           />
-          <ProductDescription />
-          {showCart && <CartList />}
+          <ProductDescription onHandleSetCardData={handleSetCardData} />
+          {showCart && <CartList cartData={cartData} />}
         </section>
         {showFullImageGallery && (
           <div className="h-full w-full bg-fullImageScreenBackgroundColor absolute top-0 flex items-center justify-center z-50">
